@@ -1,0 +1,115 @@
+.bubble {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bubble.own {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.bubble.other {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  flex-shrink: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 70%;
+}
+
+.bubble.own .content {
+  align-items: flex-end;
+}
+
+.bubble.other .content {
+  align-items: flex-start;
+}
+
+.username {
+  font-size: 12px;
+  font-weight: 600;
+  color: #7c8db0;
+  padding: 0 12px;
+}
+
+.messageBox {
+  background: #f0f2f5;
+  border-radius: 12px;
+  padding: 12px 16px;
+  word-break: break-word;
+  position: relative;
+}
+
+.bubble.own .messageBox {
+  background: #5865f2;
+}
+
+.messageText {
+  margin: 0;
+  font-size: 15px;
+  color: #222;
+  line-height: 1.4;
+}
+
+.bubble.own .messageText {
+  color: #fff;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #999;
+  padding: 0 12px;
+}
+
+.deleteTimer {
+  font-size: 11px;
+  color: #ff6b6b;
+  font-weight: 600;
+  margin-left: 8px;
+  display: inline-block;
+}
+
+.systemMessage {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  animation: slideIn 0.3s ease-out;
+}
+
+.systemText {
+  background: #f0f2f5;
+  color: #7c8db0;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}

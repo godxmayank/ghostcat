@@ -12,8 +12,8 @@ html, body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0a0a0a;
-  color: #ffffff;
+  background: white;
+  color: #222;
 }
 
 body {
@@ -32,7 +32,7 @@ button {
   font-family: inherit;
 }
 
-input {
+input, textarea, select {
   font-family: inherit;
 }
 
@@ -43,11 +43,17 @@ input {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #404040;
+  background: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
   border-radius: 4px;
 }
 

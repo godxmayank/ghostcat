@@ -4,17 +4,16 @@
   justify-content: center;
   min-height: 100vh;
   padding: 20px;
-  background-color: #0a0a0a;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .card {
-  background-color: #1a1a1a;
-  border: 1px solid #333333;
-  border-radius: 12px;
-  padding: 40px;
+  background: white;
+  border-radius: 16px;
+  padding: 48px;
   max-width: 420px;
   width: 100%;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
 }
 
 .header {
@@ -25,7 +24,7 @@
 .title {
   font-size: 32px;
   font-weight: 700;
-  color: #ffffff;
+  color: #222;
   margin-bottom: 8px;
   display: flex;
   align-items: center;
@@ -40,9 +39,9 @@
 
 .tagline {
   font-size: 14px;
-  color: #888888;
+  color: #666;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 
 .form {
@@ -60,17 +59,17 @@
 .label {
   font-size: 12px;
   font-weight: 600;
-  color: #aaaaaa;
+  color: #666;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .input {
   padding: 12px 16px;
-  border: 1px solid #333333;
+  border: 1px solid #e5e7eb;
   border-radius: 8px;
-  background-color: #0f0f0f;
-  color: #ffffff;
+  background: #fff;
+  color: #222;
   font-size: 16px;
   transition: all 0.2s ease;
   letter-spacing: 1px;
@@ -78,13 +77,13 @@
 
 .input:focus {
   outline: none;
-  border-color: #6366f1;
-  background-color: #1a1a1a;
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+  border-color: #5865f2;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(88, 101, 242, 0.1);
 }
 
 .input::placeholder {
-  color: #555555;
+  color: #bbb;
 }
 
 .buttonGroup {
@@ -110,15 +109,15 @@
 }
 
 .primaryButton {
-  background-color: #6366f1;
-  color: #ffffff;
-  border-color: #6366f1;
+  background: #5865f2;
+  color: white;
+  border-color: #5865f2;
 }
 
 .primaryButton:hover:not(:disabled) {
-  background-color: #4f46e5;
-  border-color: #4f46e5;
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  background: #4752c4;
+  border-color: #4752c4;
+  box-shadow: 0 4px 12px rgba(88, 101, 242, 0.3);
 }
 
 .primaryButton:active:not(:disabled) {
@@ -126,23 +125,23 @@
 }
 
 .primaryButton:disabled {
-  background-color: #333333;
-  color: #666666;
-  border-color: #333333;
+  background: #e5e7eb;
+  color: #999;
+  border-color: #e5e7eb;
   cursor: not-allowed;
   opacity: 0.5;
 }
 
 .secondaryButton {
-  background-color: transparent;
-  color: #6366f1;
-  border-color: #6366f1;
+  background: transparent;
+  color: #5865f2;
+  border-color: #5865f2;
 }
 
 .secondaryButton:hover {
-  background-color: rgba(99, 102, 241, 0.1);
-  border-color: #4f46e5;
-  color: #4f46e5;
+  background: rgba(88, 101, 242, 0.1);
+  border-color: #4752c4;
+  color: #4752c4;
 }
 
 .secondaryButton:active {
@@ -152,13 +151,13 @@
 .footer {
   margin-top: 40px;
   padding-top: 24px;
-  border-top: 1px solid #333333;
+  border-top: 1px solid #e5e7eb;
   text-align: center;
 }
 
 .footer p {
   font-size: 12px;
-  color: #666666;
+  color: #999;
   line-height: 1.6;
 }
 

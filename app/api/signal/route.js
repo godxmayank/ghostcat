@@ -27,7 +27,7 @@ export async function POST(request) {
       });
     }
 
-    const validEvents = ['message', 'share-key', 'peer-joined', 'peer-left'];
+    const validEvents = ['message', 'share-key', 'peer-joined', 'peer-left', 'typing'];
     if (!validEvents.includes(event)) {
       return new Response(JSON.stringify({ error: 'Invalid event' }), {
         status: 400,
