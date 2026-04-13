@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "app/api/signal/route.js": {
+      "maxDuration": 10
+    }
+  }
+}
