@@ -2,10 +2,12 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import UsernameModal from '@/components/UsernameModal';
 import styles from './page.module.css';
 
 export default function JoinScreen() {
   const router = useRouter();
+  const [showModal, setShowModal] = useState(true);
   const [roomId, setRoomId] = useState('');
 
   const handleRoomIdChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -33,6 +35,14 @@ export default function JoinScreen() {
       handleEnterRoom();
     }
   };
+
+  const handleUsernameComplete = () => {
+    setShowModal(false);
+  };
+
+  if (showModal) {
+    return <UsernameModal onComplete={handleUsernameComplete} />;
+  }
 
   return (
     <div className={styles.container}>

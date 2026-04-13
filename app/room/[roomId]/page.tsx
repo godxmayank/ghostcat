@@ -252,13 +252,13 @@ export default function ChatScreen() {
       return prev;
     });
 
-    // Clear typing indicator after 3 seconds
+    // Clear typing indicator after 2 seconds
     clearTimeout(typingTimeoutRef.current as NodeJS.Timeout);
     typingTimeoutRef.current = setTimeout(() => {
       setTypingUsers((prev) =>
         prev.filter((u) => u !== typingUsername)
       );
-    }, 3000);
+    }, 2000);
   };
 
   // Helpers
@@ -330,7 +330,7 @@ export default function ChatScreen() {
 
       setTimeout(() => {
         isTypingRef.current = false;
-      }, 1000);
+      }, 400);
     }
   };
 
